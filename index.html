@@ -59,6 +59,7 @@
   -->
 
   <div class="topbar">
+    <div class="container">
 
       <address class="topbar-item">
         <!-- <div class="icon">
@@ -88,18 +89,11 @@
         
       </a>
 
+      
 
-      <!-- <div class="separator"></div> -->
-
-      <!-- <a href="mailto:booking@restaurant.com" class="topbar-item link">
-        <div class="icon">
-          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-        </div>
-
-        <span class="span">booking@restaurant.com</span>
-      </a> -->
       <div id="google_translate_element"></div>
 
+    </div>
   </div>
 
 
@@ -1141,14 +1135,16 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
-  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  <script>  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({
-        pageLanguage: 'en',
-        includedLanguages: '', // Leave empty to allow all languages
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-    }, 'google_translate_element');
-}</script>
+  <script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: '', // Leave empty to allow all languages
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+    }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   <!-- 
     - ionicon link
   -->

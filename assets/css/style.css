@@ -1509,9 +1509,8 @@ textarea.input-field {
     align-items: center;
   }
 
-  .topbar  {display: flex;
-    justify-content: space-between;
-    
+  .topbar .container {
+    justify-content: center;
     gap: 200px;
   }
 
@@ -2158,9 +2157,58 @@ textarea.input-field {
     left: 0;
   }
 
-}   /* Compact Google Translate Element Styling */
+}    /* Minimal translator container */
 #google_translate_element {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 1px;
+    border-radius: 1px solid ;
+    position: relative;
+    z-index: 999;
+}
+
+/* Hide Google branding and text */
+.goog-te-gadget {
+    font-size: 7px !important;
+    display: flex;
+}
+.goog-te-gadget span {
+    display: none;
+
+}
+.goog-te-gadget img {
+    display: block !important;
+}
+
+/* Stylish dropdown */
+.goog-te-combo {
+    padding: 6px 25px 6px 10px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 15px !important;
+    background-color: #f8f9fa !important;
+    font-size: 14px !important;
+    color: #333 !important;
+    cursor: pointer;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path fill="%23333" d="M7 10l5 5 5-5z"/></svg>') !important;
+    background-repeat: no-repeat !important;
+    background-position: right 8px center !important;
+    width: auto !important;
+    transition: all 0.3s ease;
+}
+
+/* Hover effects */
+.goog-te-combo:hover {
+    border-color: #999 !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Language dropdown styling */
+.goog-te-menu-frame {
+    max-height: 50px !important;
+    overflow-y: auto !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+}
+.goog-te-menu2 {
+    max-width: 300px !important;
 }
